@@ -10,7 +10,7 @@ import { RecipeService } from './recipe.service';
 
 export class RecipesComponent implements OnInit {
   selectedRecipe: Recipe;
-  
+  recipes: Recipe[];
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
@@ -20,6 +20,11 @@ export class RecipesComponent implements OnInit {
           this.selectedRecipe = recipe;
         }
       );
-  }
+  
+    this.recipeService.getRecipes().subscribe((recipes: Recipe[]) => {
+    this.recipes = recipes;
+  });
 
+
+  }
 }

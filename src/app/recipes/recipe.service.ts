@@ -1,50 +1,93 @@
-import { EventEmitter, Injectable } from "@angular/core";
-import { Ingredient } from "../shared/ingredient.model";
-import { ShoppingListService } from "../shopping-list/shopping-list.service";
-import { Recipe } from "./recipe.model";
-
+import { EventEmitter, Injectable } from '@angular/core';
+import { Ingredient } from '../shared/ingredient.model';
+import { ShoppingListService } from '../shopping-list/shopping-list.service';
+import { Recipe } from './recipe.model';
+import { DataStorageService } from '../data.storage.service';
+import { Observable, catchError, map, of, tap } from 'rxjs';
 @Injectable()
 export class RecipeService {
-    recipeSelected = new EventEmitter<Recipe>();
-    recipesChanged = new EventEmitter<Recipe[]>();
 
-    private recipes: Recipe[] = [
-        new Recipe('Chicken Biryani', 'This is simply biryani', 'https://geekrobocook.com/wp-content/uploads/2021/05/Muradabadi-chicken-biryani-1200x900.jpg',[
-            new Ingredient('Chicken', 1),
-            new Ingredient('Rice', 20)
-        ]),
-        new Recipe('Chicken noodles', 'This is simply noodles', 'https://www.licious.in/blog/wp-content/uploads/2020/12/Sesame-Chicken-Noodles.jpg',[
-            new Ingredient('Chicken', 1),
-            new Ingredient('Noodles', 20)
-        ])
-    ];
+  recipeSelected = new EventEmitter<Recipe>();
+  recipesChanged = new EventEmitter<Recipe[]>();
+  recipe: Recipe;
+  private recipes: Recipe[] = [];
 
-    constructor(private slService: ShoppingListService) {}
-    
-    getRecipes() {
-        return this.recipes.slice();
-    }
+  constructor(
+    private slService: ShoppingListService,
+    private dataStorageService: DataStorageService
+  ) {}
 
-    getRecipe(index: number) {
-        return this.recipes[index];
-    }
-    
-    addIngredientsToList(ingredients: Ingredient[]) {
-        this.slService.addIngredients(ingredients);
-    }
-
-    addRecipe(recipe: Recipe) {
-        this.recipes.push(recipe);
-        this.recipesChanged.emit(this.recipes.slice());
-    }
-
-    updateRecipe(index: number, newRecipe: Recipe) {
-        this.recipes[index] = newRecipe;
-        this.recipesChanged.emit(this.recipes.slice());
-    }
-    
-    deleteRecipe(index: number) {
-        this.recipes.splice(index, 1);
-        this.recipesChanged.emit(this.recipes.slice());
-    }
+  getRecipes(): Observable<Recipe[]> {
+    return this.dataStorageService.sendGetRequest('recipes').pipe(
+      map((data: any) => {
+        console.log(data);
+        return data as Recipe[];
+      }),
+      catchError((error: any) => {
+        console.log(error);
+        window.alert('ERROR: ' + error);
+        return of([]); // Default return value or empty array for error case
+      })
+    );
+  }
+  
+  getRecipe(id) : Observable<Recipe>{
+    return this.dataStorageService.sendGetRequest('recipes/' + id).pipe(
+      map((data: any) => {
+        console.log(data);
+        return data as Recipe;
+      }),
+      catchError((error: any) => {
+        console.log(error);
+        window.alert('ERROR: ' + error);
+        return of(null); // Default return value or null for error case
+      })
+    );
+  }
+  
+  postRecipe(body: any): Observable<Recipe> {
+    return this.dataStorageService.sendPostRequest('recipes/', body).pipe(
+      tap((data: any) => {
+        console.log(data);
+        this.recipe = data;
+      }),
+      catchError((error: any) => {
+        console.log(error);
+        window.alert('ERROR: ' + error);
+        return of(null); // Default return value or null for error case
+      })
+    );
+  }
+  
+  putRecipe(id: string, body: any): Observable<Recipe> {
+    return this.dataStorageService.sendPutRequest('recipes/' + id, body).pipe(
+      tap((data: any) => {
+        console.log(data);
+        this.recipe = data;
+      }),
+      catchError((error: any) => {
+        console.log(error);
+        window.alert('ERROR: ' + error);
+        return of(null); // Default return value or null for error case
+      })
+    );
+  }
+  
+  deleteRecipe(id): Observable<any> {
+    return this.dataStorageService.sendDeleteRequest('recipe/' + id).pipe(
+      tap((data: any) => {
+        console.log(data);
+        this.recipe = data;
+      }),
+      catchError((error: any) => {
+        console.log(error);
+        window.alert('ERROR: ' + error);
+        return of(null); // Default return value or null for error case
+      })
+    );
+  }
+  
+  addIngredientsToList(ingredients: Ingredient[]) {
+    this.slService.addIngredients(ingredients);
+}
 }

@@ -1,20 +1,19 @@
 import { Ingredient } from "../shared/ingredient.model";
 
 export class Recipe {
-    Id: number;
-    Name: string;
-    ExecutionTime: number;
-    Difficulty: number;
-    Ingredients: Ingredient[];
-    UrlImage: string;
+    public name: string;
+    public description: string;
+    public difficulty: number;
+    public executionTime: number;
+    public imagePath: string;
+    public ingredients: Ingredient[];
 
-
-    constructor(id:number, name: string, executionTime: number, difficulty: number, recipeIngredients: Ingredient[], urlImage: string) {
-        this.Id = id;
-        this.Name = name;
-        this.ExecutionTime = executionTime;
-        this.Difficulty = difficulty;
-        this.Ingredients = recipeIngredients;
-        this.UrlImage = urlImage;
+    constructor(name: string, desc: string, imagePath: string, ingredients: Ingredient[], difficulty: number, executionTime: number) {
+        this.name = name;
+        this.description = desc;
+        this.imagePath = imagePath;
+        this.ingredients = ingredients;
+        this.difficulty = difficulty;
+        this.executionTime = executionTime;
     }
 }

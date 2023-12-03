@@ -1,0 +1,50 @@
+<div class="container">
+  <nav class="navbar navbar-dark bg-primary">
+    <span><h1>Modifica dettagli ricetta</h1></span>
+  </nav>
+  <form>
+    <div class="input-group">
+      <span class="input-group-text">Nome</span>
+      <input type="text" class="form-control" id="nome" name="nome" required [(ngModel)]="ricetta.nome">
+    </div>
+
+    <div class="form-group">
+      <span class="input-group-text">Descrizione</span>
+      <textarea class="form-control" id="descrizione" name="descrizione" required [(ngModel)]="ricetta.descrizione"></textarea>
+    </div>
+
+    <div *ngFor="let ingrediente of ricetta.ingredienti; let i = index">
+      <div class="input-group">
+        <span class="input-group-text">Ingrediente {{ i + 1 }}</span>
+        <input type="text" class="form-control" [(ngModel)]="ingrediente.ingrediente" name="ingrediente{{ i }}" required>
+        <input type="number" class="form-control" [(ngModel)]="ingrediente.quantita" name="quantita{{ i }}" required>
+        <button type="button" class="btn btn-danger" (click)="rimuoviIngrediente(i)">---</button>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="aggiungiIngrediente()">Aggiungi Ingrediente</button>
+    
+
+    <div class="form-group">
+      <span class="input-group-text">Istruzioni</span>
+      <textarea class="form-control" id="istruzioni" name="istruzioni" required [(ngModel)]="ricetta.istruzioni"></textarea>
+    </div>
+
+    <div class="form-group">
+      <span class="input-group-text">Tempo di esecuzione (minuti)</span>
+      <input type="number" class="form-control" id="tempoEsecuzione" name="tempoEsecuzione" required [(ngModel)]="ricetta.tempoEsecuzione">
+    </div>
+
+    <div class="form-group">
+      <span class="input-group-text">Difficolta'</span>
+      <input type="text" class="form-control" id="difficolta" name="difficolta" required [(ngModel)]="ricetta.difficolta">
+    </div>
+
+    <div class="form-group">
+      <span class="input-group-text">URL immagine</span>
+      <input type="text" class="form-control" id="immagine" name="immagine" required [(ngModel)]="ricetta.immagine">
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="modificaRicetta()">Salva Ricetta</button>
+  </form>
+</div>
+<hr>

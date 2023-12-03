@@ -1,0 +1,62 @@
+{
+    "Ricette": [
+      {
+        "nome": "cookie",
+        "descrizione": "In cucina, come nella vita, ci sono dei capisaldi. Soprattutto quando si è bambini e l'ora della merenda o la colazione sono i momenti più divertenti e golosi. Pane e Nutella o latte e biscotti! Ed ecco che noi inguaribili nostalgici davanti al bicchiere di latte freddo ci siamo illuminati e non abbiamo resistito dal preparare i biscotti per accompagnarlo: i Cookies (o Chocolate Chip Cookies), i famosi biscottoni rotondi e burrosi con gocce di cioccolato, resi famosi da tante pellicole americane",
+        "ingredienti": [
+          {
+            "ingrediente": "farina",
+            "quantita": "195"
+          },
+          {
+            "ingrediente": "Bicarbonato",
+            "quantita": "1"
+          },
+          {
+            "ingrediente": "Zucchero",
+            "quantita": "200"
+          },
+          {
+            "ingrediente": "GocceDiCioccolato",
+            "quantita": "200g"
+          },
+          {
+            "ingrediente": "Burro",
+            "quantita": "100"
+          },
+          {
+            "ingrediente": "Uova",
+            "quantita": "55g"
+          },
+          {
+            "ingrediente": "sale",
+            "quantita": "1"
+          }
+        ],
+        "istruzioni": "Per preparare i cookies, assicuratevi che il burro sia morbido. Quindi versate in una ciotola lo zucchero di canna e quello semolato 1. Unite un pizzico di sale 2 e il burro 3.\nLavorate con le fruste elettriche fino ad amalgamare gli ingredienti 4, aggiungete l'uovo 5 e lavorate ancora con le fruste elettriche 6. \nQuando sarà ben assorbito unite la farina 7 e il bicarbonato 8. Lavorate con le fruste elettriche 9 sino ad ottenere un composto omogeneo. \nAggiungete le gocce di cioccolato 10 e mescolate con una spatola 11. Adesso utilizzando uno spallinatore da 5 cm di diametro prelevate una porzione di impasto (circa 40-45 g) 12.\nQuindi adagiate su una leccarda rivestita con carta forno le palline, ben distanziate tra loro 13, in cottura infatti tenderanno ad allargarsi molto. Cuocete in forno statico preriscaldato a 190° per 13-15 minuti sino a che non saranno ben dorati. Sfornate 14, lasciate raffreddare e servite i vostri cookies 15!",
+        "tempoEsecuzione": "30",
+        "difficolta": "FACILE",
+        "immagine": "https://www.giallozafferano.it/images/230-23007/Cookies_450x300.jpg",
+        "id": 2
+      },
+      {
+        "nome": "guacamole",
+        "descrizione": "Dici \"guacamole\" ed è subito fiesta! La famosa salsa messicana a base di avocado non può mancare per l'aperitivo a base di nachos e viene spesso utilizzata per farcire sfiziose tortillas, burrito e fajitas. Prepararla in casa è molto semplice",
+        "ingredienti": [
+          {
+            "ingrediente": "Lime",
+            "quantita": "34"
+          },
+          {
+            "ingrediente": "Succo di limone",
+            "quantita": "30"
+          }
+        ],
+        "istruzioni": "Per preparare il guacamole, per prima cosa mondate e tritate finemente la cipolla 1, poi tritate anche il coriandolo 2. Dividete l’avocado a metà ed estraete il nocciolo 3.\nPrelevate la polpa con l’aiuto di un cucchiaio e versatela all’interno di un mortaio 4. Aggiungete il succo di lime 5 e cominciate a pestare fino ad ottenere una crema 6.",
+        "tempoEsecuzione": "5",
+        "difficolta": "FACILE",
+        "immagine": "https://www.giallozafferano.it/images/236-23676/Guacamole_450x300.jpg",
+        "id": 3
+      }
+    ]
+  }

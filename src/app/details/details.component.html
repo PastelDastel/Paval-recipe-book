@@ -1,0 +1,51 @@
+<div class="card mb-3">
+    <img src="{{ricetta.immagine}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Nome</div>
+                {{ricetta.nome}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Descrizione</div>
+                {{ricetta.difficolta}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Ingredienti</div>
+                <p *ngFor="let ingrediente of ricetta.ingredienti">{{ingrediente.ingrediente}} => {{ingrediente.quantita}}</p>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Tempo di esecuzione</div>
+                  {{ricetta.tempoEsecuzione}} minuti
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Preparazione</div>
+                  {{ricetta.istruzioni}}
+                </div>
+              </li>
+          </ol>  
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger" (click)="onDelete(ricetta.id)">Elimina</button>
+            <button type="button" class="btn btn-warning" [routerLink]="['/ricette', ricetta.id, 'modify']">Modifica</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Calcola Ingredienti
+              </button>
+              <div class="dropdown-menu p-2">
+                <input type="number" class="form-control" [(ngModel)]="numPeople" (change)="calcolaIngredienti()" min="1" placeholder="Numero di persone">
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+
+

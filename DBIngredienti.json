@@ -1,62 +1,264 @@
 {
-    "Ricette": [
-      {
-        "nome": "cookie",
-        "descrizione": "In cucina, come nella vita, ci sono dei capisaldi. Soprattutto quando si è bambini e l'ora della merenda o la colazione sono i momenti più divertenti e golosi. Pane e Nutella o latte e biscotti! Ed ecco che noi inguaribili nostalgici davanti al bicchiere di latte freddo ci siamo illuminati e non abbiamo resistito dal preparare i biscotti per accompagnarlo: i Cookies (o Chocolate Chip Cookies), i famosi biscottoni rotondi e burrosi con gocce di cioccolato, resi famosi da tante pellicole americane",
-        "ingredienti": [
-          {
-            "ingrediente": "farina",
-            "quantita": "195"
-          },
-          {
-            "ingrediente": "Bicarbonato",
-            "quantita": "1"
-          },
-          {
-            "ingrediente": "Zucchero",
-            "quantita": "200"
-          },
-          {
-            "ingrediente": "GocceDiCioccolato",
-            "quantita": "200g"
-          },
-          {
-            "ingrediente": "Burro",
-            "quantita": "100"
-          },
-          {
-            "ingrediente": "Uova",
-            "quantita": "55g"
-          },
-          {
-            "ingrediente": "sale",
-            "quantita": "1"
-          }
-        ],
-        "istruzioni": "Per preparare i cookies, assicuratevi che il burro sia morbido. Quindi versate in una ciotola lo zucchero di canna e quello semolato 1. Unite un pizzico di sale 2 e il burro 3.\nLavorate con le fruste elettriche fino ad amalgamare gli ingredienti 4, aggiungete l'uovo 5 e lavorate ancora con le fruste elettriche 6. \nQuando sarà ben assorbito unite la farina 7 e il bicarbonato 8. Lavorate con le fruste elettriche 9 sino ad ottenere un composto omogeneo. \nAggiungete le gocce di cioccolato 10 e mescolate con una spatola 11. Adesso utilizzando uno spallinatore da 5 cm di diametro prelevate una porzione di impasto (circa 40-45 g) 12.\nQuindi adagiate su una leccarda rivestita con carta forno le palline, ben distanziate tra loro 13, in cottura infatti tenderanno ad allargarsi molto. Cuocete in forno statico preriscaldato a 190° per 13-15 minuti sino a che non saranno ben dorati. Sfornate 14, lasciate raffreddare e servite i vostri cookies 15!",
-        "tempoEsecuzione": "30",
-        "difficolta": "FACILE",
-        "immagine": "https://www.giallozafferano.it/images/230-23007/Cookies_450x300.jpg",
-        "id": 2
-      },
-      {
-        "nome": "guacamole",
-        "descrizione": "Dici \"guacamole\" ed è subito fiesta! La famosa salsa messicana a base di avocado non può mancare per l'aperitivo a base di nachos e viene spesso utilizzata per farcire sfiziose tortillas, burrito e fajitas. Prepararla in casa è molto semplice",
-        "ingredienti": [
-          {
-            "ingrediente": "Lime",
-            "quantita": "34"
-          },
-          {
-            "ingrediente": "Succo di limone",
-            "quantita": "30"
-          }
-        ],
-        "istruzioni": "Per preparare il guacamole, per prima cosa mondate e tritate finemente la cipolla 1, poi tritate anche il coriandolo 2. Dividete l’avocado a metà ed estraete il nocciolo 3.\nPrelevate la polpa con l’aiuto di un cucchiaio e versatela all’interno di un mortaio 4. Aggiungete il succo di lime 5 e cominciate a pestare fino ad ottenere una crema 6.",
-        "tempoEsecuzione": "5",
-        "difficolta": "FACILE",
-        "immagine": "https://www.giallozafferano.it/images/236-23676/Guacamole_450x300.jpg",
-        "id": 3
-      }
-    ]
-  }
+  "Ricette": [
+    {
+      "nome": "cookie",
+      "descrizione": "In cucina, come nella vita, ci sono dei capisaldi. Soprattutto quando si è bambini e l'ora della merenda o la colazione sono i momenti più divertenti e golosi. Pane e Nutella o latte e biscotti! Ed ecco che noi inguaribili nostalgici davanti al bicchiere di latte freddo ci siamo illuminati e non abbiamo resistito dal preparare i biscotti per accompagnarlo: i Cookies (o Chocolate Chip Cookies), i famosi biscottoni rotondi e burrosi con gocce di cioccolato, resi famosi da tante pellicole americane",
+      "ingredienti": [
+        {
+          "ingrediente": "farina",
+          "quantita": "195"
+        },
+        {
+          "ingrediente": "Bicarbonato",
+          "quantita": "1"
+        },
+        {
+          "ingrediente": "Zucchero",
+          "quantita": "200"
+        },
+        {
+          "ingrediente": "GocceDiCioccolato",
+          "quantita": "200g"
+        },
+        {
+          "ingrediente": "Burro",
+          "quantita": "100"
+        },
+        {
+          "ingrediente": "Uova",
+          "quantita": "55g"
+        },
+        {
+          "ingrediente": "sale",
+          "quantita": "1"
+        }
+      ],
+      "istruzioni": "Per preparare i cookies, assicuratevi che il burro sia morbido. Quindi versate in una ciotola lo zucchero di canna e quello semolato 1. Unite un pizzico di sale 2 e il burro 3.\nLavorate con le fruste elettriche fino ad amalgamare gli ingredienti 4, aggiungete l'uovo 5 e lavorate ancora con le fruste elettriche 6. \nQuando sarà ben assorbito unite la farina 7 e il bicarbonato 8. Lavorate con le fruste elettriche 9 sino ad ottenere un composto omogeneo. \nAggiungete le gocce di cioccolato 10 e mescolate con una spatola 11. Adesso utilizzando uno spallinatore da 5 cm di diametro prelevate una porzione di impasto (circa 40-45 g) 12.\nQuindi adagiate su una leccarda rivestita con carta forno le palline, ben distanziate tra loro 13, in cottura infatti tenderanno ad allargarsi molto. Cuocete in forno statico preriscaldato a 190° per 13-15 minuti sino a che non saranno ben dorati. Sfornate 14, lasciate raffreddare e servite i vostri cookies 15!",
+      "tempoEsecuzione": "30",
+      "difficolta": "FACILE",
+      "immagine": "https://www.giallozafferano.it/images/230-23007/Cookies_450x300.jpg",
+      "id": 2
+    },
+    {
+      "nome": "guacamole",
+      "descrizione": "Dici \"guacamole\" ed è subito fiesta! La famosa salsa messicana a base di avocado non può mancare per l'aperitivo a base di nachos e viene spesso utilizzata per farcire sfiziose tortillas, burrito e fajitas. Prepararla in casa è molto semplice",
+      "ingredienti": [
+        {
+          "ingrediente": "Lime",
+          "quantita": "34"
+        },
+        {
+          "ingrediente": "Succo di limone",
+          "quantita": "30"
+        }
+      ],
+      "istruzioni": "Per preparare il guacamole, per prima cosa mondate e tritate finemente la cipolla 1, poi tritate anche il coriandolo 2. Dividete l’avocado a metà ed estraete il nocciolo 3.\nPrelevate la polpa con l’aiuto di un cucchiaio e versatela all’interno di un mortaio 4. Aggiungete il succo di lime 5 e cominciate a pestare fino ad ottenere una crema 6.",
+      "tempoEsecuzione": "5",
+      "difficolta": "FACILE",
+      "immagine": "https://www.giallozafferano.it/images/236-23676/Guacamole_450x300.jpg",
+      "id": 3
+    },
+    {
+      "nome": "Tiramisù",
+      "descrizione": "Il Tiramisù è un dolce italiano amato in tutto il mondo. Strati di savoiardi inzuppati nel caffè, alternati con una crema di mascarpone, creano un dessert decadente e irresistibile.",
+      "ingredienti": [
+        {
+          "ingrediente": "Uova",
+          "quantita": "4"
+        },
+        {
+          "ingrediente": "Zucchero",
+          "quantita": "150g"
+        },
+        {
+          "ingrediente": "Mascarpone",
+          "quantita": "500g"
+        },
+        {
+          "ingrediente": "Savoiardi",
+          "quantita": "200g"
+        },
+        {
+          "ingrediente": "Caffè espresso",
+          "quantita": "200ml"
+        },
+        {
+          "ingrediente": "Cacao in polvere",
+          "quantita": "q.b."
+        }
+      ],
+      "istruzioni": "Separare i tuorli dagli albumi. Mescolare i tuorli con lo zucchero fino a ottenere una crema. Aggiungere il mascarpone e mescolare bene. Montare gli albumi a neve e incorporarli delicatamente alla crema. Inzuppare i savoiardi nel caffè e alternarli con strati di crema in una teglia. Refrigerare per almeno 4 ore. Prima di servire, cospargere con cacao in polvere.",
+      "tempoEsecuzione": "30",
+      "difficolta": "MEDIA",
+      "immagine": "URL_immagine_tiramisu",
+      "id": 4
+    },
+    {
+      "nome": "Risotto ai Funghi",
+      "descrizione": "Il Risotto ai Funghi è un piatto comfort ricco di sapori. Il riso viene cotto lentamente con funghi porcini, cipolla e vino bianco per creare una consistenza cremosa e deliziosa.",
+      "ingredienti": [
+        {
+          "ingrediente": "Riso Arborio",
+          "quantita": "300g"
+        },
+        {
+          "ingrediente": "Funghi porcini",
+          "quantita": "200g"
+        },
+        {
+          "ingrediente": "Cipolla",
+          "quantita": "1"
+        },
+        {
+          "ingrediente": "Vino bianco",
+          "quantita": "1/2 bicchiere"
+        },
+        {
+          "ingrediente": "Brodo vegetale",
+          "quantita": "1 litro"
+        },
+        {
+          "ingrediente": "Parmigiano Reggiano",
+          "quantita": "50g"
+        },
+        {
+          "ingrediente": "Burro",
+          "quantita": "2 cucchiai"
+        },
+        {
+          "ingrediente": "Prezzemolo",
+          "quantita": "q.b."
+        }
+      ],
+      "istruzioni": "In una pentola, soffriggere la cipolla con il burro. Aggiungere i funghi e cuocere fino a doratura. Aggiungere il riso e tostare per qualche minuto. Sfumare con il vino bianco. Aggiungere gradualmente il brodo, mescolando continuamente, fino a cottura completa del riso. Mantecare con il formaggio e il prezzemolo. Servire caldo.",
+      "tempoEsecuzione": "40",
+      "difficolta": "MEDIA",
+      "immagine": "URL_immagine_risotto_funghi",
+      "id": 5
+    },
+    {
+      "nome": "Pizza Margherita",
+      "descrizione": "La Pizza Margherita è un classico intramontabile della cucina italiana. Una base di pizza sottile coperta con pomodoro, mozzarella e basilico fresco.",
+      "ingredienti": [
+        {
+          "ingrediente": "Base per pizza",
+          "quantita": "1"
+        },
+        {
+          "ingrediente": "Pomodori pelati",
+          "quantita": "400g"
+        },
+        {
+          "ingrediente": "Mozzarella",
+          "quantita": "200g"
+        },
+        {
+          "ingrediente": "Basilico",
+          "quantita": "1 mazzetto"
+        },
+        {
+          "ingrediente": "Olio extra vergine d'oliva",
+          "quantita": "2 cucchiai"
+        },
+        {
+          "ingrediente": "Sale",
+          "quantita": "q.b."
+        }
+      ],
+      "istruzioni": "Stendere la base per pizza su una teglia. Spalmare i pomodori pelati sulla base. Distribuire la mozzarella e il basilico. Condire con olio e sale. Cuocere in forno pre-riscaldato a 220°C per circa 15-20 minuti o fino a quando la crosta è dorata. Servire calda.",
+      "tempoEsecuzione": "25",
+      "difficolta": "FACILE",
+      "immagine": "URL_immagine_pizza_margherita",
+      "id": 6
+    },
+    {
+      "nome": "Pasta Carbonara",
+      "descrizione": "Un classico della cucina romana, la Pasta Carbonara è un piatto semplice e delizioso. La crema ottenuta dalla combinazione di uova, formaggio pecorino e pancetta rende questo piatto irresistibile.",
+      "ingredienti": [
+        {
+          "ingrediente": "Spaghetti",
+          "quantita": "400g"
+        },
+        {
+          "ingrediente": "Uova",
+          "quantita": "4"
+        },
+        {
+          "ingrediente": "Pancetta",
+          "quantita": "150g"
+        },
+        {
+          "ingrediente": "Pecorino Romano",
+          "quantita": "100g"
+        },
+        {
+          "ingrediente": "Pepe nero",
+          "quantita": "q.b."
+        },
+        {
+          "ingrediente": "Sale",
+          "quantita": "q.b."
+        }
+      ],
+      "istruzioni": "Cuocere gli spaghetti al dente. Nel frattempo, rosolare la pancetta in una padella. In una ciotola, mescolare le uova con il formaggio. Scolare gli spaghetti e unirli alla pancetta. Aggiungere la crema di uova e formaggio, mescolare bene. Aggiustare di sale e pepe. Servire caldo.",
+      "tempoEsecuzione": "20",
+      "difficolta": "MEDIA",
+      "immagine": "URL_immagine_pasta_carbonara",
+      "id": 7
+    },
+    {
+      "nome": "Insalata Caprese",
+      "descrizione": "L'Insalata Caprese è un'esplosione di sapori freschi e genuini. Pomodori maturi, mozzarella di bufala e basilico si combinano per creare un piatto leggero e delizioso.",
+      "ingredienti": [
+        {
+          "ingrediente": "Pomodori",
+          "quantita": "4"
+        },
+        {
+          "ingrediente": "Mozzarella di bufala",
+          "quantita": "200g"
+        },
+        {
+          "ingrediente": "Basilico",
+          "quantita": "1 mazzetto"
+        },
+        {
+          "ingrediente": "Olio extra vergine d'oliva",
+          "quantita": "3 cucchiai"
+        },
+        {
+          "ingrediente": "Sale",
+          "quantita": "q.b."
+        },
+        {
+          "ingrediente": "Pepe nero",
+          "quantita": "q.b."
+        }
+      ],
+      "istruzioni": "Tagliare i pomodori e la mozzarella a fette. Disporre alternando strati di pomodoro, mozzarella e foglie di basilico su un piatto. Condire con olio, sale e pepe. Servire freddo.",
+      "tempoEsecuzione": "15",
+      "difficolta": "FACILE",
+      "immagine": "URL_immagine_insalata_caprese",
+      "id": 8
+    },
+    {
+      "nome": "ricetta di prova",
+      "descrizione": "Questa e' solo una ricetta temporanea di prova, puo' essere modificata e cancellata",
+      "ingredienti": [
+        {
+          "ingrediente": "Prove",
+          "quantita": 2
+        },
+        {
+          "ingrediente": "Paval",
+          "quantita": 9999
+        }
+      ],
+      "istruzioni": "Creare la ricetta e tornare nella home page",
+      "tempoEsecuzione": "5",
+      "difficolta": "Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Molto Facile ",
+      "immagine": "Nessuna immagine, siamo poveri",
+      "id": 9
+    }
+  ]
+}

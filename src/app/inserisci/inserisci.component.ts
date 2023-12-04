@@ -10,7 +10,7 @@ export class InserisciComponent implements OnInit {
     this.ingredienti.splice(index, 1);
   }
   
-ingredienti: { nome: string, quantita: number }[] = [];
+ingredienti: { ingrediente: string, quantita: number }[] = [];
 
 constructor(private router: Router) { }
 
@@ -18,7 +18,7 @@ ngOnInit(): void {
 }
 
 aggiungiIngrediente() {
-  this.ingredienti.push({ nome: '', quantita: 0 });
+  this.ingredienti.push({ ingrediente: '', quantita: 0 });
 }
   
 salvaRicetta() {
@@ -56,25 +56,3 @@ salvaRicetta() {
     });
 }
 }
-
-
-//json-server --watch DBIngredienti.json -port3000
-  /*PER RICERCA 
-  OnInput(event:Event){
-    console.log((<HTMLInputElement>event.target).value);
-  }
-  (input)="OnInput($event)"*/
-  
-/*   constructor(private http: HttpClient) {}
-
-  inviaRicetta() {
-    const url = 'http://localhost:3000/ricette'; 
-
-    this.http.post(url, this.ricetta)
-      .subscribe((nuovaRicetta) => {
-        console.log('Ricetta inviata con successo:', nuovaRicetta);
-        // Puoi fare altre azioni qui, ad esempio reindirizzare l'utente o resettare il form
-      }, (errore) => {
-        console.error('Errore durante l\'invio della ricetta:', errore);
-      });
-  } */

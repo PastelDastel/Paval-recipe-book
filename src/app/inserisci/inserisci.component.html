@@ -16,7 +16,7 @@
     <div *ngFor="let ingrediente of ingredienti; let i = index">
       <div class="input-group">
         <span class="input-group-text">Ingrediente {{ i + 1 }}</span>
-        <input type="text" class="form-control" [(ngModel)]="ingrediente.nome" name="ingrediente{{ i }}" required>
+        <input type="text" class="form-control" [(ngModel)]="ingrediente.ingrediente" name="ingrediente{{ i }}" required>
         <input type="number" class="form-control" [(ngModel)]="ingrediente.quantita" name="quantita{{ i }}" required>
         <button type="button" class="btn btn-danger" (click)="rimuoviIngrediente(i)">---</button>
 
